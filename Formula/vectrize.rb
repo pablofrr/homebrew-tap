@@ -1,19 +1,19 @@
 class Vectrize < Formula
-  desc "Local semantic search over folders of Markdown documents, for the terminal and AI agents"
+  desc "Local and fast semantic search over folders of Markdown documents, built for you and your AI agents."
   homepage "https://github.com/pablofrr/vectrize"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/pablofrr/vectrize/releases/download/v0.2.0/vectrize-aarch64-apple-darwin.tar.xz"
-    sha256 "0fe3e4417071a3600b5fcd10d05bb185ab0733ba4279d0eb1f015d4277632cb6"
+    url "https://github.com/pablofrr/vectrize/releases/download/v0.2.1/vectrize-aarch64-apple-darwin.tar.xz"
+    sha256 "797fa7628fedf0861618dcfeebd491795fcb99b600d18b1fb39a2b4b46a25a52"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pablofrr/vectrize/releases/download/v0.2.0/vectrize-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4e2b41624d34619137230a1bb1bcbb5b34e85a0b6982c4f786c259ec1f4bb10d"
+      url "https://github.com/pablofrr/vectrize/releases/download/v0.2.1/vectrize-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ac3a84941099595fc4bc642f095aa002c3bdf9645ddc12bd9a021c0484a86350"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pablofrr/vectrize/releases/download/v0.2.0/vectrize-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fbae1b124f9a759e5c623fe36782f74579e829f70aadf8af5c8e4d9f644cf17d"
+      url "https://github.com/pablofrr/vectrize/releases/download/v0.2.1/vectrize-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bd13211409a288f91eb94df09a8e9643d64b1bfca14e1446de13f437a548b1a5"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
